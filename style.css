@@ -1,0 +1,65 @@
+html {
+    background: linear-gradient(180deg, #8B1FF8 0%, #041832 48.44%, #01080E 100%);
+    min-height: 100vh;
+    font-size: 25px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("/images/pattern.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.calculator {
+    background-color: #6F4A8E;
+    .visor{
+        background-color: #050505;
+        margin: 10px;
+        padding: 30px;
+        color: #EBEBEB;
+        text-align: right;
+        border-radius: 12px;
+        height: 20px;
+    }
+
+    .number-rows {
+        padding: 5px;
+
+        .row {
+            display: flex;
+
+            button {
+                border: none;
+                text-decoration: none;
+                text-align: center;
+                background-color: #221F3B;
+                color: #EBEBEB;
+                display: inline-block;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+                font-size: 25px;
+                font-family: "Trebuchet MS", Helvetica, sans-serif;
+
+                border-radius: 12px;
+                margin: 3px;
+                padding: 50px;
+                width: 40px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            button:active {
+                background-color: rgb(70, 67, 67);
+                transform: translateY(4px);
+            }
+        }
+    }
+}
